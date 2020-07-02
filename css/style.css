@@ -1,0 +1,100 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header { 
+    position: fixed;
+    width: 100%;
+    height: 191px;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    background: #169C6C;
+    border-bottom: 3px solid grey; 
+}
+
+
+a {
+    text-decoration: none; /*gets rid of underline all links bc why would you want an underline this isn't 2006??!?*/
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    font-size: 20px;
+    color: #3CEEAE;
+    /*margin-right: 1px;*/ 
+}
+
+#logo {
+    height: 50px;
+    padding: 25px;
+
+}
+
+#sitename {
+    display: inline;
+    font-weight: bold;
+    color: #3CEEAE;
+    font-size: 45px;
+}
+
+#main {
+    margin-left: 5%;
+    margin-right: 10%;
+    padding-top: 200px; /*as long as it's larger than 191px lmao*/
+}
+#main h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 5px;
+    color: #3CEEAE;
+    margin-top: 125px;
+}
+
+#main p {
+    width: 50%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: #20B781;    
+}
+
+#about-us-button {
+    color: #43FFBC; /*text color*/
+    font-size: 25px;
+    line-height: 37px;
+    position: absolute;
+    width: 164px;
+    height: 62px;
+    left: 1082px;
+    top: 507px;
+    border: none;
+    border-radius: 2.5%;
+    background-color: #25C48B;    
+}
+
+#about-us img {
+    position: absolute;
+    width: 220px;
+    height: 167px;
+    left: 1026px;
+    top: 318px;
+}
+
+
+footer {
+    width: 100%;
+    height: 47px;
+    background: #169C6C;
+    text-align: right;
+}
+
+footer a {
+    color: #3CEEAE;
+    margin: auto;
+}
