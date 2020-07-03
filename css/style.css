@@ -1,5 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
+ 
 }
 
 header { 
@@ -129,3 +130,10 @@ footer a {
     color: #3CEEAE;
     margin: auto;
 }
+/*! the new world begins after this comment*/
+
+
+.navbar { 
+    display: flex; justify-content: center;
+ }
+ 
