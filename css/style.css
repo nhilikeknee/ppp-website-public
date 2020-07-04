@@ -1,116 +1,92 @@
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins" sans-serif;
+  overflow-x: hidden;
 }
 
-header { 
-    position: fixed;
-    width: 100%;
-    height: 100px;
-    left: 0px;
-    top: 0px;
-    z-index: 1;
-    background-color: #169C6C;
-}
-
-nav { /* can switch to a grid in the future. */
-    position: fixed;
-    left: 0px;
-    width: 100%;
-    margin-top: 92px;
-    height: 91px;
-    z-index: 1;
-    background-color: #169C6C;
-    border-bottom: 3px solid grey; 
-}
-
-.flexbox {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-
-a {
-    text-decoration: none; /*gets rid of underline all links bc why would you want an underline this isn't 2006??!?*/
-}
-    
 nav {
-    text-align: center;
+  /* we need the width to be 100% or it dies */
+  width: 100%;
+}
+
+.navbar {
+  position: fixed;
+  background-color: #169c6c;
+}
+
+.navbar ul {
+  background-color: #169c6c; /*background of hamburger dropdown*/
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.dropdown-menu {
+  background-color: #69e0b7; /*for the k-2 and 3-5 toggle*/
+}
+
+nav {
+  text-align: center;
 }
 
 nav a {
-    font-size: 20px;
-    color: #3CEEAE;
-    margin-right: 46px;
-}
-
-#logo {
-    height: 50px;
-    padding: 25px;
-}
-
-#sitename {
-    display: inline;
-    font-weight: bold;
-    color: #3CEEAE;
-    font-size: 72px;
-    margin-top: 30px;
+  font-size: 20px;
+  color: #3ceeae; /*text color for navbar links*/
+  margin-right: 0.9em;
 }
 
 #main {
-    margin-left: 5%;
-    margin-right: 10%;
-    padding-top: 200px; /*as long as it's larger than 191px lmao*/
+  margin-left: 5%;
+  margin-right: 10%;
+  padding-top: 5em; /*this shifts the body down*/
 }
 
 #main h2 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 64px;
-    line-height: 5px;
-    color: #3CEEAE;
-    margin-top: 125px;
+  /*Mission Statement: WHAT HOW HOW EXACTLY?*/
+  font-size: 64px;
+  color: #3ceeae;
+  margin-top: 60px;
 }
 
 #main p {
-    width: 50%;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 36px;
-    color: #20B781;    
+  width: 50%;
+  font-size: 24px;
+  color: #20b781;
 }
 
+/*TODO we'll figure this out some time...*/
 #about-us-button {
-    color: #43FFBC; /*text color*/
-    font-size: 25px;
-    line-height: 37px;
-    position: absolute;
-    width: 164px;
-    height: 62px;
-    left: 1082px;
-    top: 507px;
-    border: none;
-    border-radius: 2.5%;
-    background-color: #25C48B;    
+  color: #43ffbc; /*text color*/
+  font-size: 25px;
+  line-height: 37px;
+  position: absolute;
+  width: 164px;
+  height: 62px;
+  left: 1082px;
+  top: 507px;
+  border: none;
+  border-radius: 2.5%;
+  background-color: #25c48b;
 }
 
+/*TODO fix this bc it's ugly...the design not the ppl in the pic*/
 #about-us img {
-    position: absolute;
-    width: 220px;
-    height: 167px;
-    left: 1026px;
-    top: 318px;
+  position: absolute;
+  width: 220px;
+  height: 167px;
+  left: 1026px;
+  top: 318px;
 }
 
 footer {
-    width: 100%;
-    height: 47px;
-    background: #169C6C;
-    text-align: right;
+  width: 100%;
+  height: 47px;
+  background: #169c6c;
+  text-align: right;
 }
 
 footer a {
-    color: #3CEEAE;
-    margin: auto;
+  color: #3ceeae;
+  margin: auto;
 }
 /*! the new world begins after this comment*/

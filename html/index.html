@@ -17,30 +17,83 @@
     />
   </head>
   <body>
-    <header class="flexbox">
-      <img
-        id="logo"
-        src="https://lh3.googleusercontent.com/proxy/D7aLHudSEB7Vbu-f2GbB6Ly8qv1t-0epwFAHjkzuKc13ZM5Gx5pQdnOPAZGq4PGlw_I6YJW9s3wnWrBel06F3RbubWzPJhews3tXs6mfxw-YwwVrDt62qgJOWUo1RbM"
-        alt="it's supposed to be a leaf"
-      />
-      <a id="sitename" href="./index.html">Plant-Powered Plates</a>
-    </header>
     <div id="nav">
-      <nav class="flexbox">
-        <ul>
-          <a href="./starthere.html">START HERE</a>
-          <a href="./index.html">HOME</a>
-          <a href="./k2.html">K-2</a>
-          <a href="./35.html">3-5</a>
-          <a href="./parents.html">PARENTS</a>
-          <a href="./educators.html">EDUCATORS</a>
-          <a href="./resource.html">RESOURCES</a>
-        </ul>
+      <nav class="navbar navbar-expand-lg mt-0">
+        <a href="./index.html"
+          ><img src="../images/WetLmao5.png" alt="Random Leaf Logo" height="60"
+        /></a>
+        <button
+          class="navbar-toggler float-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto text-right mx-auto">
+            <!--text right for hamburger, mxauto for when it's big-->
+            <a class="nav-link" href="./starthere.html"
+              >START HERE<span class="sr-only">(current)</span></a
+            >
+            <a class="nav-link" href="./index.html"><strong>HOME</strong></a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="./k2.html"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                K-2
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Games</a>
+                <a class="dropdown-item" href="#"
+                  >More stuff for second graders</a
+                >
+
+                <a class="dropdown-item" href="#">Kindergartener stuff</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="./35.html"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >3-5</a
+              >
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Games for big kids</a>
+                <a class="dropdown-item" href="#"
+                  >More stuff for fifth graders</a
+                >
+                <a class="dropdown-item" href="#">Third grade stuff</a>
+              </div>
+            </li>
+            <a class="nav-link" href="./parents.html">PARENTS</a>
+            <a class="nav-link" href="./educators.html">EDUCATORS</a>
+            <a class="nav-link" href="./resource.html">RESOURCES</a>
+          </ul>
+          <!--<form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>--><!--TODO THIS IS THE SEARCH BAR-->
+        </div>
       </nav>
     </div>
     <div id="main">
       <div id="WHAT">
-        <h2>WHAT?</h2>
+        <h2 class="font-weight-bold text-uppercase">WHAT?</h2>
         <p>
           Plant-Powered Plates aims
           <strong
@@ -50,7 +103,7 @@
         </p>
       </div>
       <div id="HOW">
-        <h2>HOW?</h2>
+        <h2 class="font-weight-bold text-uppercase">HOW?</h2>
         <p>
           Using kid-friendly and engaging videos, handouts, and activities, we
           hope to motivate children to create positive environmental change
@@ -58,7 +111,7 @@
         </p>
       </div>
       <div id="HOWEXACTLY">
-        <h2>HOW EXACTLY?</h2>
+        <h2 class="font-weight-bold text-uppercase">HOW EXACTLY?</h2>
         <p>
           Specifically, our initiative includes the Plant-Powered Plates
           Challenge, a school-wide competition encouraging kids to create their
@@ -75,12 +128,14 @@
     </div>
     <div id="about-us">
       <img src="../images/WetLmao5.png" alt="we're WET" />
-      <a href="./aboutus.html"
-        ><button id="about-us-button">ABOUT US</button></a
+      <a href="#about-us-section"
+        ><button type="button" id="about-us-button">ABOUT US</button></a
       >
     </div>
-    <footer>
-      <a href="./contactus.html">Contact Us</a>
+    <footer class="footer">
+      <div class="container">
+        <a href="./contactus.html">Contact Us</a>
+      </div>
     </footer>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
