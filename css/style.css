@@ -20,8 +20,6 @@ html {
   }
 }
 
-/* SWEETETH LOOK UP */
-
 body {
   font-family: "Poppins" sans-serif;
   overflow-x: hidden;
@@ -69,18 +67,16 @@ nav a {
 
 #main h2 {
   /*Mission Statement: WHAT HOW HOW EXACTLY?*/
-  font-size: 2.5rem; /* SWEETETH */
+  font-size: 2.5rem;
   color: #3ceeae;
   margin-top: 60px;
 }
 
 #main p {
   width: 50%;
-  font-size: 1rem; /* SWEETETH */
+  font-size: 1rem;
   color: #20b781;
 }
-
-/* SWEETETH */
 
 #col2 {
   visibility: hidden;
@@ -100,49 +96,47 @@ nav a {
   }
 }
 
-/* SWEETETH */
-
 /*TODO we'll figure this out some time...*/
 #about-us-button {
   color: #43ffbc; /*text color*/
-  font-size: 25px;
-  /* line-height: 37px;
-  position: absolute;
-  width: 164px;
-  height: 62px;
-  left: 1082px;
-  top: 507px; */
+  font-size: 1.5rem;
   border: none;
   border-radius: 2.5%;
   background-color: #25c48b;
   margin-left: 5rem;
 }
 
-#bio-photo { /* SWEETETH */
+.bio-photo {
   width: 300px;
   height: auto;
   margin-bottom: 2.5rem;
 }
 
-#about-us-section { /* SWEETETH */
-  color: #3CEEAE;
+#about-us-section {
+  color: #3ceeae;
 }
 
-@media screen and (max-width: 768px) { /* SWEETETH */
-  #bio-photo, #bio-text {
+#group-bio {
+  color: #20b781;
+  padding: auto 30%;
+}
+
+@media screen and (max-width: 768px) {
+  .bio-photo,
+  .bio-text {
     margin-left: 10%;
   }
   #footer {
     padding-right: 0px;
   }
 }
-@media screen and (max-width: 992px) { /* SWEETETH */
+@media screen and (max-width: 992px) {
   #br {
     display: none !important;
   }
 }
 
-#footer { /* SWEETETH */
+#footer {
   width: 101%;
   padding-left: 0px;
 }
@@ -154,7 +148,7 @@ footer {
   text-align: right;
 }
 
-footer a { /* SWEETETH */
+footer a {
   color: #3ceeae;
   padding-right: 15px;
 }
