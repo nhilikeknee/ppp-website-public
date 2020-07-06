@@ -1,3 +1,27 @@
+html {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 1.6rem;
+  }
+}
+
+/* SWEETETH LOOK UP */
+
 body {
   font-family: "Poppins" sans-serif;
   overflow-x: hidden;
@@ -39,44 +63,88 @@ nav a {
 #main {
   margin-left: 5%;
   margin-right: 10%;
+  margin-bottom: 4%;
   padding-top: 5em; /*this shifts the body down*/
 }
 
 #main h2 {
   /*Mission Statement: WHAT HOW HOW EXACTLY?*/
-  font-size: 64px;
+  font-size: 2.5rem; /* SWEETETH */
   color: #3ceeae;
   margin-top: 60px;
 }
 
 #main p {
   width: 50%;
-  font-size: 24px;
+  font-size: 1rem; /* SWEETETH */
   color: #20b781;
 }
+
+/* SWEETETH */
+
+#col2 {
+  visibility: hidden;
+  width: 0%;
+  height: 0%;
+}
+
+#col2 img {
+  width: 300px;
+  height: auto;
+  margin: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  #col2 {
+    visibility: visible;
+  }
+}
+
+/* SWEETETH */
 
 /*TODO we'll figure this out some time...*/
 #about-us-button {
   color: #43ffbc; /*text color*/
   font-size: 25px;
-  line-height: 37px;
+  /* line-height: 37px;
   position: absolute;
   width: 164px;
   height: 62px;
   left: 1082px;
-  top: 507px;
+  top: 507px; */
   border: none;
   border-radius: 2.5%;
   background-color: #25c48b;
+  margin-left: 5rem;
 }
 
-/*TODO fix this bc it's ugly...the design not the ppl in the pic*/
-#about-us img {
-  position: absolute;
-  width: 220px;
-  height: 167px;
-  left: 1026px;
-  top: 318px;
+#bio-photo { /* SWEETETH */
+  width: 300px;
+  height: auto;
+  margin-bottom: 2.5rem;
+}
+
+#about-us-section { /* SWEETETH */
+  color: #3CEEAE;
+}
+
+@media screen and (max-width: 768px) { /* SWEETETH */
+  #bio-photo, #bio-text {
+    margin-left: 10%;
+  }
+  #footer {
+    padding-right: 0px;
+  }
+}
+@media screen and (max-width: 992px) { /* SWEETETH */
+  #br {
+    display: none !important;
+  }
+}
+
+#footer { /* SWEETETH */
+  width: 101%;
+  padding-left: 0px;
 }
 
 footer {
@@ -86,7 +154,7 @@ footer {
   text-align: right;
 }
 
-footer a {
+footer a { /* SWEETETH */
   color: #3ceeae;
-  margin: auto;
+  padding-right: 15px;
 }
