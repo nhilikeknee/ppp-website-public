@@ -152,3 +152,12 @@ footer a {
   color: #3ceeae;
   padding-right: 15px;
 }
+
+#maya-bio, #nhi-bio, #amanda-bio {
+  display: none;
+  width: 300px;
+  height: auto;
+  margin-bottom: 2.5rem;
+  transition-delay: 5s;
+  transition-property: display;
+}
