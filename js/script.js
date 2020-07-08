@@ -1,4 +1,4 @@
-//CHANGES BACK AND FORTH FROM BIO PHOTO TO INDIVIDUAL BIO "TEXT"
+//CHANGES BACK AND FORTH FROM BIO PHOTO TO INDIVIDUAL BIO TEXT
 let amandaPhoto = document.getElementById("amanda-photo");
 let amandaBio = document.getElementById("amanda-bio");
 amandaPhoto.onmouseenter = () => {
@@ -40,5 +40,9 @@ nhiPhoto.onmouseenter = bioFlip(nhiPhoto, nhiBio); */
 // nhiPhoto.addEventListener("mouseout", bioFlip(nhiBio, nhiPhoto));
 
 const newsletterPopup = () => {
-  timeoutID = window.setTimeout(window.alert, 2*1000, 'That was really slow!');
+  timeoutID = window.setTimeout(
+    window.alert,
+    2 * 1000,
+    "THIS IS A BANNER POP UP THING"
+  );
 };

@@ -72,6 +72,13 @@ nav a {
   margin-top: 60px;
 }
 
+#main h3 {
+  /*For the second title in Educators page*/
+  font-size: 2rem;
+  color: #3ceeae;
+  margin-top: 60px;
+}
+
 #main p {
   width: 50%;
   font-size: 1rem;
@@ -153,11 +160,18 @@ footer a {
   padding-right: 15px;
 }
 
-#maya-bio, #nhi-bio, #amanda-bio {
+#maya-bio,
+#nhi-bio,
+#amanda-bio {
+  font-size: 0.8rem;
   display: none;
   width: 300px;
   height: auto;
-  margin-bottom: 2.5rem;
-  transition-delay: 5s;
-  transition-property: display;
+  margin-bottom: 1rem;
+}
+
+/*EDUCATORS PAGE*/
+#state-standards {
+  height: 800px;
+  border-style: none;
 }

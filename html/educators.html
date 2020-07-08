@@ -1,17 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href="../css/style.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script type = "text/javascript" src = "../js/script.js"></script>    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Educators</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="nav">
+      <nav class="navbar navbar-expand-lg mt-0">
+        <a href="./index.html"
+          ><img src="../images/WetLmao5.png" alt="Random Leaf Logo" height="60"
+        /></a>
+        <button
+          class="navbar-toggler float-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto text-right mx-auto">
+            <!--text right for hamburger, mxauto for when it's big-->
+            <a class="nav-link" href="./index.html">HOME</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="./k2.html"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                K-2
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Games</a>
+                <a class="dropdown-item" href="#"
+                  >More stuff for second graders</a
+                >
+
+                <a class="dropdown-item" href="#">Kindergartener stuff</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="./35.html"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >3-5</a
+              >
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Games for big kids</a>
+                <a class="dropdown-item" href="#"
+                  >More stuff for fifth graders</a
+                >
+                <a class="dropdown-item" href="#">Third grade stuff</a>
+              </div>
+            </li>
+            <a class="nav-link" href="./parents.html">PARENTS</a>
+            <a class="nav-link" href="./educators.html"
+              ><strong>EDUCATORS</strong></a
+            >
+            <a class="nav-link" href="./resource.html">RESOURCES</a>
+          </ul>
+          <!--<form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>--><!--TODO THIS IS THE SEARCH BAR-->
+        </div>
+      </nav>
+    </div>
+
+    <div id="main" class="container-fluid">
+      <div class="row">
+        <h2 class="col-11">Here’s how PPP can help teachers...</h2>
+      </div>
+      <div class="row">
+        <p class="col-11">
+          In a traditional classroom, these standards will take [research] days
+          to complete. The PPP curriculum is designed to be completed within
+          [less time] without losing any of the important content or something
+          like that.
+        </p>
+      </div>
+      <div class="row">
+        <h3 class="col-11">
+          Here’s how our curriculum lines up with (California) State standards
+        </h3>
+      </div>
+      <div class="row justify-content-center">
+        <iframe
+          id="state-standards"
+          class="col-11 col-lg-8"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR4UA9fJUHcXIGe9HGI-3SgZ3TK6oW-KAneg45TIZkiRG89JvfCteIwMy_d2zuBbayH-NGEo2Y7-gum/pubhtml?widget=true&amp;headers=false"
+        ></iframe>
+        <div class="col-lg-1"></div>
+        <!--this is a ghetto column to push the table to the left-->
+      </div>
+    </div>
+    <div id="footer" class="container-fluid">
+      <footer class="footer">
+        <a class="align-middle" href="./contactus.html">Contact Us</a>
+      </footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+  </body>
 </html>
