@@ -23,6 +23,7 @@ html {
 body {
   font-family: "Poppins" sans-serif;
   overflow-x: hidden;
+  min-height: 100%;
 }
 
 nav {
@@ -45,7 +46,14 @@ nav {
 }
 
 .dropdown-menu {
-  background-color: #69e0b7; /*for the k-2 and 3-5 toggle*/
+  background-color: #169c6c; /*for the k-2 and 3-5 toggle*/
+  border-style: none;
+  color: #3ceeae;
+}
+
+.dropdown-item {
+  color: #3ceeae;
+  text-align: right;
 }
 
 nav {
@@ -58,28 +66,32 @@ nav a {
   margin-right: 0.9em;
 }
 
-#main {
-  margin-left: 5%;
-  margin-right: 10%;
+a:hover {
+  text-decoration: none; /*Because we hate underlined links, this is NOT 2004*/
+}
+main {
   margin-bottom: 4%;
   padding-top: 5em; /*this shifts the body down*/
 }
 
-#main h2 {
+main h2 {
   /*Mission Statement: WHAT HOW HOW EXACTLY?*/
+  margin-left: 5%;
   font-size: 2.5rem;
   color: #3ceeae;
   margin-top: 60px;
 }
 
-#main h3 {
+main h3 {
   /*For the second title in Educators page*/
+  margin-left: 5%;
   font-size: 2rem;
   color: #3ceeae;
   margin-top: 60px;
 }
 
-#main p {
+main p {
+  margin-left: 5%;
   width: 50%;
   font-size: 1rem;
   color: #20b781;
@@ -144,6 +156,8 @@ nav a {
 }
 
 #footer {
+  position: relative;
+  bottom: 0;
   width: 101%;
   padding-left: 0px;
 }
@@ -170,8 +184,39 @@ footer a {
   margin-bottom: 1rem;
 }
 
-/*EDUCATORS PAGE*/
+/*EDUCATORS PAGE*/ /*EDUCATORS PAGE*/ /*EDUCATORS PAGE*/ /*EDUCATORS PAGE*/ /*EDUCATORS PAGE*/ /*EDUCATORS PAGE*/ /*EDUCATORS PAGE*/
 #state-standards {
   height: 800px;
   border-style: none;
+}
+
+/*RESOURCES PAGE*/ /*RESOURCES PAGE*/ /*RESOURCES PAGE*/ /*RESOURCES PAGE*/ /*RESOURCES PAGE*/ /*RESOURCES PAGE*/ /*RESOURCES PAGE*/
+.resources-columns {
+  background-color: rgba(158, 248, 215, 0.25);
+  height: 1041px; /*TODO: change this to auto somehow and make sure the bottom padding looks nice*/
+}
+
+.rc-entry {
+  padding-top: 1.5rem;
+}
+
+.rc-entry-image {
+  border-radius: 5%;
+}
+
+.rc-entry-title {
+  margin-top: -0.5rem;
+  color: #25c48b;
+}
+
+.rc-entry-desc {
+  font-size: 0.6rem;
+  margin-bottom: 0px;
+}
+
+.rc-entry-tags {
+  width: 2.5rem;
+  font-size: 0.5rem;
+  color: #20b781;
+  background-color: rgba(158, 248, 215, 0.42);
 }
