@@ -72,7 +72,7 @@ a:hover {
 main {
   margin-bottom: 4%;
   padding-top: 5em; /*this shifts the body down*/
-  min-height: 87vh; /*SWEETETH*/
+  min-height: 87vh; /*ensures footer at bottom of page even if there's little page content (see Parents page)*/
 }
 
 main h2 {
@@ -194,7 +194,7 @@ footer a {
 /*RESOURCES PAGE*/ /*RESOURCES PAGE*/ /*RESOURCES PAGE*/ /*RESOURCES PAGE*/ /*RESOURCES PAGE*/ /*RESOURCES PAGE*/ /*RESOURCES PAGE*/
 .resources-columns {
   background-color: rgba(158, 248, 215, 0.25);
-  height: auto; /*SWEETETH: original was 1041px*/
+  height: auto; /*original was 1041px*/
   padding-bottom: 1.5rem;
 }
 
@@ -223,7 +223,8 @@ footer a {
   background-color: rgba(158, 248, 215, 0.42);
 }
 
-@media screen and (min-width: 992px){  /*SWEETETH*/
+@media screen and (min-width: 992px) {
+  /*prevents tag from misaligning with text on Resources page*/
   .btn {
     padding-left: 1px;
     padding-right: 1px;

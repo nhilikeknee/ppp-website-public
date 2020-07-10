@@ -1,0 +1,22 @@
+{
+  "name": "ppp-website",
+  "version": "1.0.0",
+  "description": "July 8, 2020: I done messed up the README page but I think I fixed it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhilikeknee/ppp-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nhilikeknee/ppp-website/issues"
+  },
+  "homepage": "https://github.com/nhilikeknee/ppp-website#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
