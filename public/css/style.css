@@ -26,15 +26,11 @@ body {
   min-height: 100%;
 }
 
-nav {
-  /* we need the width to be 100% or it dies */
-  width: 100%;
-}
-
 .navbar {
   position: fixed;
   background-color: #169c6c;
   z-index: 1;
+  width: 100%;
 }
 
 .navbar ul {
@@ -156,18 +152,22 @@ main p {
   }
 }
 
-#footer {
+/* #footer {
   position: relative;
   bottom: 0;
   width: 101%;
   padding-left: 0px;
-}
+} */
 
 footer {
   width: 100%;
   height: 47px;
   background: #169c6c;
   text-align: right;
+
+  position: relative;
+  bottom: 0;
+  padding-left: 0px;
 }
 
 footer a {
