@@ -24,6 +24,8 @@ body {
   font-family: "Poppins" sans-serif;
   overflow-x: hidden;
   min-height: 100%;
+  background-color: #e5e5e5;
+  margin: 0 auto;
 }
 
 .navbar {
@@ -65,12 +67,16 @@ nav a {
 a:hover {
   text-decoration: none; /*Because we hate underlined links, this is NOT 2004*/
 }
+
 main {
   margin-bottom: 4%;
   padding-top: 5em; /*this shifts the body down*/
   min-height: 100vh; /*ensures footer at bottom of page even if there's little page content (see Parents page)*/
 }
-
+main h1 {
+  font-size: 3.5rem;
+  color: #3ceeae;
+}
 main h2 {
   /*Mission Statement: WHAT HOW HOW EXACTLY?*/
   margin-left: 5%;
@@ -130,6 +136,7 @@ main p {
 
 #about-us-section {
   color: #3ceeae;
+  height: auto;
 }
 
 #group-bio {
@@ -151,13 +158,6 @@ main p {
     display: none !important;
   }
 }
-
-/* #footer {
-  position: relative;
-  bottom: 0;
-  width: 101%;
-  padding-left: 0px;
-} */
 
 footer {
   width: 100%;
@@ -225,9 +225,24 @@ footer a {
 
 @media screen and (min-width: 992px) {
   /*prevents tag from misaligning with text on Resources page*/
-  .btn {
+  .rc-entry-tags {
     padding-left: 1px;
     padding-right: 1px;
     margin-right: 1rem;
   }
+}
+
+/*CONTACT US */ /*CONTACT US */ /*CONTACT US */ /*CONTACT US */ /*CONTACT US */
+#contact-form {
+}
+
+#message-box {
+  height: 300px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #3ceeae;
+
 }
