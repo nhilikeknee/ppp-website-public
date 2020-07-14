@@ -36,6 +36,15 @@ app.get("/35", function(req, res) {
 	res.render("35");
 });
 
+/* SWEETETH --Flash Popup Before Redirect*/
+app.post("/contactform", function(req, res){
+	console.log(req.body.name);
+	console.log(req.body.email);
+	console.log(req.body.subject);
+	console.log(req.body.message);
+	res.redirect("/");
+});
+
 app.listen(port, ip, function(){
 	console.log("HEY LOOK, THE SERVER IS WORKING!");
 });
