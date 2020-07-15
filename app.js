@@ -1,50 +1,73 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const nodemailer = require("nodemailer");
 const ip = process.env.IP || "localhost";
 const port = process.env.PORT || 3000;
 const app = express();
 
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 
-app.get("/", function(req, res) {
-	res.render("index");
+app.get("/", function (req, res) {
+	res.render("index", { title: "index" });
 });
 
-app.get("/educators", function(req, res) {
-	res.render("educators");
+app.get("/educators", function (req, res) {
+	res.render("educators", { title: "educators" });
 });
 
-app.get("/parents", function(req, res) {
-	res.render("parents");
+app.get("/parents", function (req, res) {
+	res.render("parents", { title: "parents" });
 });
 
-app.get("/resources", function(req, res) {
-	res.render("resources");
+app.get("/resources", function (req, res) {
+	res.render("resources", { title: "resources" });
 });
 
-app.get("/contactus", function(req, res) {
-	res.render("contactus");
+app.get("/contactus", function (req, res) {
+	res.render("contactus", { title: "contactus" });
 });
 
-app.get("/k2", function(req, res) {
-	res.render("k2");
+app.get("/k2", function (req, res) {
+	res.render("k2", { title: "k2" });
 });
 
-app.get("/35", function(req, res) {
-	res.render("35");
+app.get("/35", function (req, res) {
+	res.render("35", { title: "35" });
+});
+
+app.get("/messagesent", function (req, res) {
+	res.render("messagesent", { title: "messagesent" });
 });
 
 /* SWEETETH --Flash Popup Before Redirect*/
-app.post("/contactform", function(req, res){
-	console.log(req.body.name);
-	console.log(req.body.email);
-	console.log(req.body.subject);
-	console.log(req.body.message);
-	res.redirect("/");
+app.post("/contactform", function (req, res) {
+	async function main() {
+		let transporter = nodemailer.createTransport({
+			host: 'smtp.gmail.com',
+			port: 587,
+			secure: false,
+			auth: {
+				user: 'mayushtestemail@gmail.com',
+				pass: 'mayush68359!'
+			}
+		});
+
+		let info = await transporter.sendMail({
+			from: '"PPP Website" <mayushtestemail@gmail.com>', // sender address
+			to: "itsnhilikeknee@gmail.com", // list of receivers
+			subject: req.body.subject, // Subject line
+			text: "name: " + req.body.name + "\nemail address: " + req.body.email + "\nmessage:" + req.body.message, // plain text body
+			html: "<p style='font-size:14px;'><strong style='font-size:14px; color: grey;'>Name of Sender:</strong> " + req.body.name + "<br><strong style='font-size:14px; color: grey;'>Sender's Email Address:</strong> " + req.body.email + "<br><strong style='font-size:14px; color: grey;'>Message:</strong> <br>" + req.body.message + "</p>", // html body
+		});
+		console.log("Message sent: %s", info.messageId);
+	}
+	main().catch(console.error);
+	res.redirect("/messagesent");
 });
 
-app.listen(port, ip, function(){
+app.listen(port, ip, function () {
 	console.log("HEY LOOK, THE SERVER IS WORKING!");
 });
+

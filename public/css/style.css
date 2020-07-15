@@ -147,16 +147,6 @@ main p {
   padding: auto 30%;
 }
 
-@media screen and (max-width: 768px) {
-  /* #footer {
-    padding-right: 0px;
-  } */
-}
-@media screen and (max-width: 992px) {
-  #br {
-    display: none !important;
-  }
-}
 
 footer {
   width: 100%;
