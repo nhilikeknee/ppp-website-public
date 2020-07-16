@@ -164,6 +164,7 @@ footer a {
   padding-right: 15px;
 }
 
+/*HOME PAGE *//*HOME PAGE *//*HOME PAGE *//*HOME PAGE *//*HOME PAGE *//*HOME PAGE *//*HOME PAGE *//*HOME PAGE *//*HOME PAGE *//*HOME PAGE *//*HOME PAGE */
 #maya-bio,
 #nhi-bio,
 #amanda-bio {
@@ -172,6 +173,10 @@ footer a {
   width: 300px;
   height: auto;
   margin-bottom: 1rem;
+}
+
+.faq-questions {
+  margin-top: 0px;
 }
 
 /*EDUCATORS PAGE*/ /*EDUCATORS PAGE*/ /*EDUCATORS PAGE*/ /*EDUCATORS PAGE*/ /*EDUCATORS PAGE*/ /*EDUCATORS PAGE*/ /*EDUCATORS PAGE*/
@@ -233,5 +238,16 @@ label {
   font-weight: bold;
   font-size: 1rem;
   color: #3ceeae;
+  bottom: 0px;
+
+}
+
+/*TRYING REAL HARD TO MAKE THE CONTACT FORM NOT UGLY*/
+#return-home-button {
+  color: #43ffbc; /*text color*/
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 2.5%;
+  background-color: #25c48b;
 
 }
