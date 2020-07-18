@@ -1,19 +1,19 @@
 html {
   font-size: 1rem;
 }
-
+/*small screen*/
 @media screen and (min-width: 576px) {
   html {
     font-size: 1.2rem;
   }
 }
-
+/*medium screen*/
 @media screen and (min-width: 768px) {
   html {
     font-size: 1.4rem;
   }
 }
-
+/*large screen*/
 @media screen and (min-width: 992px) {
   html {
     font-size: 1.6rem;
@@ -103,7 +103,7 @@ main p {
 }
 
 #about-us-col img {
-  width: 500px;
+  width: 80%;
   margin-top: 1rem;
 }
 
@@ -122,7 +122,7 @@ main p {
 }
 
 .bio-photo {
-  width: 300px;
+  width: 90%;
   margin-bottom: 2.5rem;
 }
 
@@ -144,6 +144,14 @@ footer a {
   font-size: 0.7rem;
   display: none;
   width: 300px;
+}
+/*smaller than large screen*/
+@media screen and (max-width: 992px) {
+  #maya-bio,
+  #nhi-bio,
+  #amanda-bio {
+    font-size: 1rem;
+  }
 }
 
 .faq-questions {
