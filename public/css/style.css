@@ -23,18 +23,18 @@ html {
 body {
   font-family: "Poppins" sans-serif;
   overflow-x: hidden;
-  background-color: #e5e5e5;
+  background-color: #D6EFC7;
 }
 /*NAV BAR*//*NAV BAR*//*NAV BAR*//*NAV BAR*//*NAV BAR*//*NAV BAR*//*NAV BAR*//*NAV BAR*//*NAV BAR*/
 .navbar {
   position: fixed;
-  background-color: #169c6c;
+  background-color: #184D47;
   z-index: 1;
   width: 100%;
 }
 
 .navbar ul {
-  background-color: #169c6c; /*background of hamburger dropdown*/
+  background-color: #184D47; /*background of hamburger dropdown*/
 }
 
 .navbar-toggler-icon {
@@ -42,7 +42,7 @@ body {
 }
 
 .dropdown-menu {
-  background-color: #169c6c; /*for the k-2 and 3-5 toggle*/
+  background-color: #184D47; /*for the k-2 and 3-5 toggle*/
   border-style: none;
 
 }
@@ -66,8 +66,8 @@ main {
   min-height: 92vh; /*ensures footer at bottom of page even if there's little page content (see Parents page)*/
 }
 
-h1, h2, h3, h4, footer a, .dropdown-menu, .dropdown-item, nav a, label  { /* nav a is text color for navbar links*/
-  color: #3ceeae;
+h1, h2, h3, h4, .dropdown-menu, .dropdown-item, nav a, label  { /* nav a is text color for navbar links*/
+  color: #96BB7C;
 }
 
 main h1 {
@@ -95,7 +95,7 @@ main p {
   margin-left: 5%;
   width: 50%;
   font-size: 1rem;
-  color: #20b781;
+  color: #184D47;
 }
 
 #about-us-col {
@@ -114,10 +114,14 @@ main p {
 }
 
 #about-us-button {
-  color: #43ffbc; /*text color*/
+  color: #184D47; /*text color*/
   /*I hads an epiphany and realized we had a row within a row and it done messed up the font size*/
-  border: none;
-  background-color: #25c48b;
+  border: 6px solid #184D47;
+  /*border-color: #184D47;
+  border-radius: 6px;
+  /*TO DO: idk how to make the border bigger tho....border-radius ain't working*/
+  /*ok nvm i figure out an alternative but i still don't know what border-radius doesn't work :>*/
+  background-color: #D6EFC7;
   margin-top: 1.5rem;
 }
 
@@ -129,12 +133,13 @@ main p {
 footer {
   width: 100%;
   height: 2rem; /*we made her not fat on weird screens by using rem bc what even are pixels?*/
-  background: #169c6c;
+  background: #184D47;
   text-align: right;
 }
 
 footer a {
   padding-right: 15px;
+  color: #3ceeae;
 }
 
 /*HOME PAGE *//*HOME PAGE *//*HOME PAGE *//*HOME PAGE *//*HOME PAGE *//*HOME PAGE *//*HOME PAGE *//*HOME PAGE *//*HOME PAGE *//*HOME PAGE *//*HOME PAGE */
@@ -166,7 +171,7 @@ footer a {
 
 /*RESOURCES PAGE*/ /*RESOURCES PAGE*/ /*RESOURCES PAGE*/ /*RESOURCES PAGE*/ /*RESOURCES PAGE*/ /*RESOURCES PAGE*/ /*RESOURCES PAGE*/
 .resources-columns {
-  background-color: rgba(158, 248, 215, 0.25);
+  background-color: rgba(150, 187, 124, 0.10);
   height: auto; /*original was 1041px*/
   padding-bottom: 1.5rem;
 }
@@ -181,7 +186,7 @@ footer a {
 
 .rc-entry-title {
   margin-top: -0.5rem;
-  color: #25c48b;
+  color: #96BB7C;
 }
 
 .rc-entry-desc {
@@ -192,8 +197,8 @@ footer a {
 .rc-entry-tags {
   width: 2.5rem;
   font-size: 0.5rem;
-  color: #20b781;
-  background-color: rgba(158, 248, 215, 0.42);
+  color: #D6EFC7;
+  background-color: rgba(24, 77, 71, 0.80);
 }
 
 @media screen and (min-width: 992px) {
@@ -217,8 +222,12 @@ label {
 
 /*TRYING REAL HARD TO MAKE THE CONTACT FORM NOT UGLY*/
 #return-home-button {
-  color: #43ffbc; /*text color*/
+  /*
+  color: #43ffbc; 
   font-size: 1.5rem;
   border: none;
-  background-color: #25c48b;
+  background-color: #25c48b;*/
+  border: 6px solid #184D47;
+  color: #184D47; /*text color*/
+  background-color: #D6EFC7;
 }
