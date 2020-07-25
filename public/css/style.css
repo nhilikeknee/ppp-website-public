@@ -25,13 +25,48 @@ body {
   overflow-x: hidden;
   background-color: #D6EFC7;
 }
+
+#site-title-area {
+  background-color: #184D47;
+}
+
+#site-title {
+  font-size: 2.1rem;
+}
+
+#site-title-img {
+  height: 95px;
+  width: auto;
+}
+
+
 /*NAV BAR*//*NAV BAR*//*NAV BAR*//*NAV BAR*//*NAV BAR*//*NAV BAR*//*NAV BAR*//*NAV BAR*//*NAV BAR*/
+.small-header{ 
+  display: none;
+}
+
 .navbar {
-  position: fixed;
   background-color: #184D47;
   z-index: 1;
   width: 100%;
 }
+
+/*medium screen*/
+@media screen and (max-width: 992px) {
+  .small-header{ 
+    display: initial;
+  }
+  #site-title-area {
+    display: none;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+  }
+}
+
+
 
 .navbar ul {
   background-color: #184D47; /*background of hamburger dropdown*/
@@ -42,24 +77,26 @@ body {
 }
 
 .dropdown-menu {
+  display: none;
   background-color: #184D47; /*for the k-2 and 3-5 toggle*/
   border-style: none;
-
+}
+.nav-item:hover .dropdown-menu{/*drop-down menus display when hovered over, no more mouse clickies >:)*/
+  display: block;
 }
 
 .dropdown-item {
-
   text-align: right;
 }
 
 nav a {
   font-size: 20px;
-
   margin-right: 0.9rem; /*moves hamburger dropdown text to the left just a bit*/
 }
 
 a:hover {
   text-decoration: none; /*Because we hate underlined links, this is NOT 2004*/
+  color: #3ceeae;
 }
 
 main {
@@ -161,6 +198,20 @@ footer a {
 
 .faq-questions {
   margin-top: 0px;
+}
+
+
+/*NEWSLETTER STUFF*/
+#newsletter-section {
+  background-color: #184D47;
+}
+
+#newsletter-text {
+  color: #96BB7C;
+}
+
+#newsletter-signup-button {
+  background-color: #EEBB4D;
 }
 
 /*EDUCATORS PAGE*/ /*EDUCATORS PAGE*/ /*EDUCATORS PAGE*/ /*EDUCATORS PAGE*/ /*EDUCATORS PAGE*/ /*EDUCATORS PAGE*/ /*EDUCATORS PAGE*/

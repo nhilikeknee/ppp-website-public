@@ -12,8 +12,17 @@
 </head>
 
 <body>
+  <div id="site-title-area" class="row justify-content-center">
+    <a href="/"><img id="site-title-img" class="pt-2 rounded" src="/images/natureplaceholder.png"
+        alt="Title Logo Placeholder" /></a>
+    <a href="/">
+      <h1 id="site-title" class="mb-0 font-weight-bold pt-4">&nbspPlant-Powered Plates</h1>
+    </a>
+  </div>
+
   <nav class="navbar navbar-expand-lg">
-    <a href="/"><img src="/images/logoplaceholder.png" alt="Logo Placeholder" height="60" /></a>
+    <a class="small-header" href="/"><img class="small-header rounded" src="/images/logoplaceholder.png"
+        alt="Logo Placeholder" height="60" /></a>
     <button class="navbar-toggler float-right" type="button" data-toggle="collapse"
       data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
       aria-label="Toggle navigation">
@@ -30,7 +39,7 @@
         <!--TODO: add the bolding if-statements to the k-2 and 3-5 dropdown menus at some point-->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="/k2" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+            aria-haspopup="true" aria-expanded="false" onclick="goToPage('k2');">
             K-2
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -42,7 +51,7 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="/35" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">3-5</a>
+            aria-haspopup="true" aria-expanded="false" onclick="goToPage('35');">3-5</a>
           <div class="dropdown-menu " aria-labelledby="navbarDropdown">
             <a class="dropdown-item text-lg-left" href="#">Games for big kids</a>
             <a class="dropdown-item text-lg-left" href="#">More stuff for fifth graders</a>

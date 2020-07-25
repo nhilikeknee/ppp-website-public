@@ -1,3 +1,23 @@
+//DISAPPEARING SITE-TITLE-AREA
+$(window).bind('scroll', function () {
+  if ($(window).scrollTop() > 50 && $(window).width() > 992) {
+    $('.navbar').css({ "position": "fixed", "top": "0" });
+  }
+  else if ($(window).scrollTop() > 30 && $(window).width() > 992) {
+    $('#site-title-area').css({ "padding-bottom": "50px" });
+  }
+  else if ($(window).width() > 992) {
+    $('.navbar').css({ "position": "fixed", "top": "100px" });
+  }
+});
+
+//WHEN CLICKING ON DROPDOWN, SHOULD TAKE USER TO K-2 OR 3-5 PAGE
+const goToPage = (page) => {
+  window.location.replace('/' + page)
+
+};
+
+
 //CHANGES BACK AND FORTH FROM BIO PHOTO TO INDIVIDUAL BIO TEXT
 let amandaPhoto = document.getElementById("amanda-photo");
 let amandaBio = document.getElementById("amanda-bio");
