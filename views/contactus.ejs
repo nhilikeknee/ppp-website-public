@@ -1,8 +1,10 @@
 <%- include("partials/header") %>
 
-<h3 class="ml-2">Contact Us</h3>
-<form class="w-100 needs-validation form" novalidate action="/contactform" method="POST">
-  <div class="form-group col-9 col-md-3">
+<h3 class="row justify-content-center">Contact Us</h3>
+
+<div class="row justify-content-center"> <!--SWEETETH: SHE WAS A BIATCH TO CENTER BUT I THINK I GOTETH-->
+<form class="needs-validation form col-9 col-md-3" novalidate action="/contactform" method="POST">
+  <div class="form-group row">
     <label for="exampleFormControlInput1">First & Last Name<sup>*</sup></label>
     <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Mark Frerichs"
       required />
@@ -10,7 +12,7 @@
       Please provide your name.
     </div>
   </div>
-  <div class="form-group col-9 col-md-3">
+  <div class="form-group row">
     <label for="exampleFormControlInput1">Email address<sup>*</sup></label>
     <input type="email" name="email" class="form-control" id="exampleFormControlInput2" placeholder="name@gmail.com"
       required />
@@ -18,10 +20,10 @@
       We need your email address so we can get back to you.
     </div>
   </div>
-  <div class="form-group col-9 col-md-3">
+  <div class="form-group row">
     <label for="exampleFormControlSelect1">Subject<sup>*</sup></label>
     <select class="form-control" name="subject" id="exampleFormControlSelect1" required>
-      <option class="text-secondary" selected disabled hidden>[select topic]</option>
+      <option class="text-secondary" selected disabled hidden value="">[select topic]</option> <!--SWEETETH-->
       <option>Content</option>
       <option>Feedback</option>
       <option>Partnership</option>
@@ -29,33 +31,27 @@
       <option>Other</option>
     </select>
     <div class="invalid-feedback">
-      Please select a topic!
+        Please select a topic!
+      </div>
     </div>
-  </div>
-
-  <div class="form-group col-9 col-lg-5">
-    <label for="exampleFormControlTextarea1">Type your message below :)<sup>*</sup></label>
-    <textarea class="form-control" name="message" id="message-box" rows="3" required></textarea>
-    <div class="invalid-feedback">
-      Please type your message in the box above.
+    <div class="form-group row">
+      <label for="exampleFormControlTextarea1">Type your message below :)<sup>*</sup></label>
+      <textarea class="form-control" name="message" id="message-box" rows="3" required></textarea>
+      <div class="invalid-feedback">
+        Please type your message in the box above.
+      </div>
     </div>
-  </div>
-
-  <div class="form-group">
-    <div class="col-sm-10">
-      <button type="submit" class="btn btn-primary">Send Message</button>
+    <div class="form-group">
+      <div class="row">
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </div>
     </div>
-  </div>
-</form>
-
+  </form>
+</div>
 
 <script>
-
-
-
-  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  // JavaScript for disabling form submissions if there are invalid fields
   (function () {
-
     'use strict';
     window.addEventListener('load', function () {
       // Fetch all the forms we want to apply custom Bootstrap validation styles to

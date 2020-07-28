@@ -1,12 +1,22 @@
 //DISAPPEARING SITE-TITLE-AREA
 $(window).bind('scroll', function () {
-  if ($(window).scrollTop() > 50 && $(window).width() > 992) {
-    $('.navbar').css({ "position": "fixed", "top": "0" });
+  if ($(window).scrollTop() > 1) { // SWEETETH: IT WAS WIGGIDY WACK SWITCH BWTN PAGES SO I ADDETH THIS
+    $('#site-title-area').css({ "padding-bottom": "48px"});
   }
-  else if ($(window).scrollTop() > 30 && $(window).width() > 992) {
-    $('#site-title-area').css({ "padding-bottom": "50px" });
+  if ($(window).scrollTop() > 50) {
+    $('.navbar').css({ "position": "fixed", "top": "0px" });
   }
   else if ($(window).width() > 992) {
+    $('.navbar').css({ "position": "fixed", "top": "100px" });
+  }
+});
+
+// SWEETETH: TO MAKE THE NAV RENDER PROPERLY ON < 992PX SCREENS
+$( window ).resize(function() {
+  if ($(window).width() < 992) {
+    $('.navbar').css({ "position": "fixed", "top": "0px" });
+  }
+  else if ($(window).scrollTop() < 50) {
     $('.navbar').css({ "position": "fixed", "top": "100px" });
   }
 });
@@ -14,7 +24,6 @@ $(window).bind('scroll', function () {
 //WHEN CLICKING ON DROPDOWN, SHOULD TAKE USER TO K-2 OR 3-5 PAGE
 const goToPage = (page) => {
   window.location.replace('/' + page)
-
 };
 
 
