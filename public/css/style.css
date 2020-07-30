@@ -251,6 +251,9 @@ footer a {
   background-color: rgba(24, 77, 71, 0.80);
 }
 
+.rc-entry-tags:hover {
+  color: #3ceeae;
+}
 @media screen and (min-width: 992px) {
   /*prevents tag from misaligning with text on Resources page*/
   .rc-entry-tags {
