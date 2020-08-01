@@ -1,7 +1,7 @@
 //DISAPPEARING SITE-TITLE-AREA
 $(window).bind('scroll', function () {
   if ($(window).scrollTop() > 1) { // SWEETETH: IT WAS WIGGIDY WACK SWITCH BWTN PAGES SO I ADDETH THIS
-    $('#site-title-area').css({ "padding-bottom": "48px"});
+    $('#site-title-area').css({ "padding-bottom": "48px" });
   }
   if ($(window).scrollTop() > 50) {
     $('.navbar').css({ "position": "fixed", "top": "0px" });
@@ -12,7 +12,7 @@ $(window).bind('scroll', function () {
 });
 
 // SWEETETH: TO MAKE THE NAV RENDER PROPERLY ON < 992PX SCREENS
-$( window ).resize(function() {
+$(window).resize(function () {
   if ($(window).width() < 992) {
     $('.navbar').css({ "position": "fixed", "top": "0px" });
   }

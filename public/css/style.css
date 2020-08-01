@@ -199,7 +199,6 @@ footer a {
   margin-top: 0px;
 }
 
-
 /*NEWSLETTER STUFF*/
 #newsletter-section {
   background-color: #184D47;
@@ -207,6 +206,12 @@ footer a {
 
 #newsletter-text {
   color: #96BB7C;
+}
+
+@media screen and (min-width: 1201px) {
+  #newsletter-text{
+    text-align: left;
+ }
 }
 
 #newsletter-signup-button {
