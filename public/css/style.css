@@ -271,12 +271,34 @@ footer a {
 /*CONTACT US PAGE*//*CONTACT US PAGE*//*CONTACT US PAGE*//*CONTACT US PAGE*//*CONTACT US PAGE*//*CONTACT US PAGE*//*CONTACT US PAGE*/
 #message-box {
   height: 300px;
+  border-bottom: 3px solid #184D47; /* SWEETETH ADDED BOTTOM BORDERS TO MATCH FIGMA*/
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#message-button {
+  background-color: #184D47; /* SWEETETH CHANGED BUTTON TO MATCH FIGMA*/
+  border-width: 0px;
+  color: #D6EFC7;
 }
 
 label {
   font-weight: bold;
   font-size: 1rem;
 }
+
+#name-box {
+  border-bottom: 3px solid #96BB7C;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#email-box {
+  border-bottom: 3px solid #184D47;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
 
 /*TRYING REAL HARD TO MAKE THE CONTACT FORM NOT UGLY*/
 #return-home-button {
