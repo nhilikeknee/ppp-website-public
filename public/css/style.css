@@ -149,18 +149,18 @@ main p {
   }
 }
 
-.transparent-button { /*SWEETETH: MADE THIS A CLASS INSTEAD OF AN ID*/
+.transparent-button { 
   color: #184D47; /*text color*/
-  /*I hads an epiphany and realized we had a row within a row and it done messed up the font size*/
   border: 6px solid #184D47;
   border-radius: 20px;
-  /*TO DO: idk how to make the border bigger tho....border-radius ain't working*/
-  /*ok nvm i figure out an alternative but i still don't know what border-radius doesn't work :>*/
-  /*SWEETETH: I DELETED THE ROUNDED PROPERTY TO ENABLE BORDER RADIUS :)*/
   background-color: #D6EFC7;
   margin-top: 1.5rem;
 }
 
+.contact-us-button {
+  background-color: #184D47;
+  color: white;
+}
 .bio-photo {
   width: 90%;
   margin-bottom: 2.5rem;
@@ -202,6 +202,9 @@ footer a {
 /*NEWSLETTER STUFF*/
 #newsletter-section {
   background-color: #184D47;
+  width: 70%;
+  padding: 50px;
+  padding-top: 10px;
 }
 
 #newsletter-text {
@@ -271,15 +274,12 @@ footer a {
 /*CONTACT US PAGE*//*CONTACT US PAGE*//*CONTACT US PAGE*//*CONTACT US PAGE*//*CONTACT US PAGE*//*CONTACT US PAGE*//*CONTACT US PAGE*/
 #message-box {
   height: 300px;
-  border-bottom: 3px solid #184D47; /* SWEETETH ADDED BOTTOM BORDERS TO MATCH FIGMA*/
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
 }
 
 #message-button {
-  background-color: #184D47; /* SWEETETH CHANGED BUTTON TO MATCH FIGMA*/
+  background-color: #184D47;
   border-width: 0px;
-  color: #D6EFC7;
+  color: white;
 }
 
 label {
@@ -287,30 +287,24 @@ label {
   font-size: 1rem;
 }
 
-#name-box {
-  border-bottom: 3px solid #96BB7C;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+.contact-us-input {
+  border-radius: 0px;
+  border-color: white;
+  border-bottom: 3px solid #96BB7C; /* COLORED BOTTOM BORDERS*/
 }
 
-#email-box {
-  border-bottom: 3px solid #184D47;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+#referral, #subject {
+  border-radius: 0px;
+  border-color: white;
 }
 
-select:invalid { /* SWEETETH THIS MAKES THE PLACEHOLDER TEXT FOR THE DROPDOWNS DISPLAY PROPERLY*/
+select:invalid { /* THIS MAKES THE PLACEHOLDER TEXT FOR THE DROPDOWNS DISPLAY PROPERLY*/
   color: #6c757d;
 }
 
 /*TRYING REAL HARD TO MAKE THE CONTACT FORM NOT UGLY*/
 #return-home-button {
-  /*
-  color: #43ffbc; 
-  font-size: 1.5rem;
-  border: none;
-  background-color: #25c48b;*/
-  border: 6px solid #184D47;
-  color: #184D47; /*text color*/
-  background-color: #D6EFC7;
+  background-color: #184D47;
+  border-width: 0px;
+  color: white;
 }

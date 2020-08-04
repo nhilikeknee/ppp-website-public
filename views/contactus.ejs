@@ -6,24 +6,21 @@
   <form class="needs-validation form col-9 col-md-5 col-lg-3" novalidate action="/contactform" method="POST">
     <div class="form-group row">
       <label for="exampleFormControlInput1">First & Last Name<sup>*</sup></label>
-      <!--SWEETETH: DElELETETH(ED) UNECESSARY IDS-->
-      <input type="text" name="name" class="form-control" id="name-box" placeholder="Mark Frerichs" 
-        required />
+      <input type="text" name="name" class="form-control contact-us-input" placeholder="Mark Frerichs" required />
       <div class="invalid-feedback">
         Please provide your name.
       </div>
     </div>
     <div class="form-group row">
       <label for="exampleFormControlInput1">Email address<sup>*</sup></label>
-      <input type="email" name="email" class="form-control" id="email-box" placeholder="name@gmail.com"
-        required />
+      <input type="email" name="email" class="form-control contact-us-input" placeholder="name@gmail.com" required />
       <div class="invalid-feedback">
         We need your email address so we can get back to you.
       </div>
     </div>
     <div class="form-group row">
       <label for="exampleFormControlSelect1">Subject<sup>*</sup></label>
-      <select class="form-control" name="subject" required>
+      <select class="form-control" name="subject" id="subject" required>
         <option selected disabled hidden value="">[select topic]</option>
         <option>Content</option>
         <option>Feedback</option>
@@ -35,10 +32,9 @@
         Please select a topic!
       </div>
     </div>
-    <!--SWEETETH: ADDED OPTION TO MATCH FIGMA-->
     <div class="form-group row">
       <label for="exampleFormControlSelect1">How did you hear about us?<sup>*</sup></label>
-      <select class="form-control" name="referral" required>
+      <select class="form-control" name="referral" id="referral" required>
         <option selected disabled hidden value="">[select option]</option>
         <option>Search engine (Google, Yahoo, etc.)</option>
         <option>Recommended by friend/colleague</option>
@@ -52,14 +48,14 @@
     </div>
     <div class="form-group row">
       <label for="exampleFormControlTextarea1">Type your message below :)<sup>*</sup></label>
-      <textarea class="form-control" name="message" id="message-box" rows="3" required></textarea>
+      <textarea class="form-control contact-us-input" name="message" id="message-box" rows="3" required></textarea>
       <div class="invalid-feedback">
         Please type your message in the box above.
       </div>
     </div>
     <div class="form-group">
       <div class="row">
-        <button type="submit" class="btn btn-primary" id="message-button">Send Message</button>
+        <button type="submit" class="btn btn-primary font-weight-bold" id="message-button">Send Message</button>
       </div>
     </div>
   </form>
