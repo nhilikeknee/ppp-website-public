@@ -32,18 +32,21 @@
       <img src="/images/natureplaceholder.png" alt="Placeholder for Image of the Three of Us?"
         class="ml-5 rounded pt-5" />
     </div>
-    <!--TODO: maybe put the buttons on the same row-->
+    <!--SWEETETH: PUT THE FIRST BUTTONS IN ONE ROW AND ADDED CONTACT US BUTTON-->
     <div class="row justify-content-center">
-      <!--taking out float-right-->
-      <a href="#about-us-section" class="row btn" role="button"><button onclick="newsletterPopup();" type="button"
-          id="about-us-button" class="btn shadow rounded btn-lg font font-weight-bold">
+      <a href="#about-us-section" class="btn" role="button"><button onclick="newsletterPopup();" type="button"
+          class="btn shadow btn-lg font font-weight-bold transparent-button">
           ABOUT US
+        </button></a>
+      <a href="#faq" class="btn" role="button"><button type="button"
+          class="btn transparent-button shadow btn-lg font font-weight-bold">
+          FAQ
         </button></a>
     </div>
     <div class="row justify-content-center">
-      <a href="#faq" class="row btn" role="button"><button type=" button" id="about-us-button"
-          class="btn shadow rounded btn-lg font font-weight-bold">
-          FAQ
+      <a href="/contactus" class="btn" role="button"><button type="button"
+          class="btn transparent-button shadow btn-lg font font-weight-bold">
+          Contact Us
         </button></a>
     </div>
   </div>
@@ -146,10 +149,6 @@
       Yes >:)
     </p>
   </div>
-
 </div>
-
-
-
 <!--FOOTER-->
 <%- include("partials/footer") %>

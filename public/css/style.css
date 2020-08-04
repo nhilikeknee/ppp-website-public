@@ -149,14 +149,14 @@ main p {
   }
 }
 
-#about-us-button {
+.transparent-button { /*SWEETETH: MADE THIS A CLASS INSTEAD OF AN ID*/
   color: #184D47; /*text color*/
   /*I hads an epiphany and realized we had a row within a row and it done messed up the font size*/
   border: 6px solid #184D47;
-  /*border-color: #184D47;
-  border-radius: 6px;
+  border-radius: 20px;
   /*TO DO: idk how to make the border bigger tho....border-radius ain't working*/
   /*ok nvm i figure out an alternative but i still don't know what border-radius doesn't work :>*/
+  /*SWEETETH: I DELETED THE ROUNDED PROPERTY TO ENABLE BORDER RADIUS :)*/
   background-color: #D6EFC7;
   margin-top: 1.5rem;
 }
@@ -299,6 +299,9 @@ label {
   border-bottom-right-radius: 0px;
 }
 
+select:invalid { /* SWEETETH THIS MAKES THE PLACEHOLDER TEXT FOR THE DROPDOWNS DISPLAY PROPERLY*/
+  color: #6c757d;
+}
 
 /*TRYING REAL HARD TO MAKE THE CONTACT FORM NOT UGLY*/
 #return-home-button {
