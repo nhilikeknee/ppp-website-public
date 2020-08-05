@@ -65,8 +65,6 @@ body {
   }
 }
 
-
-
 .navbar ul {
   background-color: #184D47; /*background of hamburger dropdown*/
 }
@@ -205,6 +203,13 @@ footer a {
   width: 70%;
   padding: 50px;
   padding-top: 10px;
+}
+
+/*small screen*/
+@media screen and (max-width: 450px) {
+  #newsletter-section {
+    width: 100%;
+  }
 }
 
 #newsletter-text {
