@@ -3,7 +3,7 @@
 <h3 class="row justify-content-center font-weight-bold">Contact Us</h3>
 
 <div class="row justify-content-center">
-  <form class="needs-validation form col-9 col-md-5 col-lg-3" novalidate action="/contactform" method="POST">
+  <form class="needs-validation form col-9 col-md-7 col-lg-5" novalidate action="/contactform" method="POST">
     <div class="form-group row">
       <label for="exampleFormControlInput1">First & Last Name<sup>*</sup></label>
       <input type="text" name="name" class="form-control contact-us-input" placeholder="Mark Frerichs" required />
@@ -15,7 +15,7 @@
       <label for="exampleFormControlInput1">Email address<sup>*</sup></label>
       <input type="email" name="email" class="form-control contact-us-input" placeholder="name@gmail.com" required />
       <div class="invalid-feedback">
-        We need your email address so we can get back to you.
+        An email address will help us get back to you :)
       </div>
     </div>
     <div class="form-group row">
@@ -36,6 +36,7 @@
       <label for="exampleFormControlSelect1">How did you hear about us?<sup>*</sup></label>
       <select class="form-control" name="referral" id="referral" required>
         <option selected disabled hidden value="">[select option]</option>
+        <option>We have met in person!</option>
         <option>Search engine (Google, Yahoo, etc.)</option>
         <option>Recommended by friend/colleague</option>
         <option>Social Media (Instagram, Facebook, etc.)</option>

@@ -1,6 +1,8 @@
 html {
   font-size: 1rem;
 }
+
+
 /*small screen*/
 @media screen and (min-width: 576px) {
   html {
@@ -100,6 +102,10 @@ main {
   min-height: 92vh; /*ensures footer at bottom of page even if there's little page content (see Parents page)*/
 }
 
+#main {
+  padding-left: 15%;
+  padding-right: 15%;
+}
 h1, h2, h3, h4, .dropdown-menu, .dropdown-item, nav a, label  { /* nav a is text color for navbar links*/
   color: #96BB7C;
 }
@@ -159,6 +165,11 @@ main p {
   background-color: #184D47;
   color: white;
 }
+
+.contact-us-button:hover {
+  color: #3ceeae;
+}
+
 .bio-photo {
   width: 90%;
   margin-bottom: 2.5rem;
@@ -201,8 +212,7 @@ footer a {
 #newsletter-section {
   background-color: #184D47;
   width: 70%;
-  padding: 50px;
-  padding-top: 10px;
+  padding: 6% 3%;/*top&bottom left&right*/
 }
 
 /*small screen*/
@@ -217,10 +227,29 @@ footer a {
 }
 
 @media screen and (min-width: 1201px) {
-  #newsletter-text{
+  #newsletter-text {
     text-align: left;
  }
 }
+
+@media screen and (max-width: 840px) {
+  #join-our-newsletter {
+    font-size: 36px;
+ }
+ #newsletter-text {
+   font-size: 16px;
+ }
+}
+
+@media screen and (max-width: 668px) {
+  #join-our-newsletter {
+    font-size: 30px;
+ }
+ #newsletter-text {
+   font-size: 14px;
+ }
+}
+
 
 #newsletter-signup-button {
   background-color: #EEBB4D;
