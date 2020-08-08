@@ -212,7 +212,7 @@ footer a {
 #newsletter-section {
   background-color: #184D47;
   width: 70%;
-  padding: 6% 3%;/*top&bottom left&right*/
+  padding: 4% 3%;/*top&bottom left&right*/
 }
 
 /*small screen*/
@@ -250,9 +250,15 @@ footer a {
  }
 }
 
-
 #newsletter-signup-button {
   background-color: #EEBB4D;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 840px) {
+  #newsletter-signup-button {
+    font-size: 0.7rem;
+  }  
 }
 
 /*EDUCATORS PAGE*/ /*EDUCATORS PAGE*/ /*EDUCATORS PAGE*/ /*EDUCATORS PAGE*/ /*EDUCATORS PAGE*/ /*EDUCATORS PAGE*/ /*EDUCATORS PAGE*/
