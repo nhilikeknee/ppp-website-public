@@ -342,6 +342,10 @@ select:invalid { /* THIS MAKES THE PLACEHOLDER TEXT FOR THE DROPDOWNS DISPLAY PR
   color: #6c757d;
 }
 
+#subject-other, #referral-other {
+  display: none;
+}
+
 /*TRYING REAL HARD TO MAKE THE CONTACT FORM NOT UGLY*/
 #return-home-button {
   background-color: #184D47;

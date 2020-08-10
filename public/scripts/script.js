@@ -111,7 +111,6 @@ nhiBio.onclick = () => {
   }
 };
 
-
 /* let bioFlip = (initState, finalState) => {
   initState.style.display = "none";
   finalState.style.display = "block";

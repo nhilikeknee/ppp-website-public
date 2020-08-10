@@ -5,50 +5,62 @@
 <div class="row justify-content-center">
   <form class="needs-validation form col-9 col-md-7 col-lg-5" novalidate action="/contactform" method="POST">
     <div class="form-group row">
-      <label for="exampleFormControlInput1">First & Last Name<sup>*</sup></label>
+      <label>First & Last Name<sup>*</sup></label>
       <input type="text" name="name" class="form-control contact-us-input" placeholder="Mark Frerichs" required />
       <div class="invalid-feedback">
         Please provide your name.
       </div>
     </div>
     <div class="form-group row">
-      <label for="exampleFormControlInput1">Email address<sup>*</sup></label>
+      <label>Email address<sup>*</sup></label>
       <input type="email" name="email" class="form-control contact-us-input" placeholder="name@gmail.com" required />
       <div class="invalid-feedback">
         An email address will help us get back to you :)
       </div>
     </div>
     <div class="form-group row">
-      <label for="exampleFormControlSelect1">Subject<sup>*</sup></label>
-      <select class="form-control" name="subject" id="subject" required>
+      <label>Subject<sup>*</sup></label>
+      <select class="form-control" name="subject" id="subject" onchange='otherHandler(this.value, this.id);' required>
         <option selected disabled hidden value="">[select topic]</option>
         <option>Content</option>
         <option>Feedback</option>
         <option>Partnership</option>
         <option>Request Materials</option>
-        <option>Other</option>
+        <option value="other">Other</option>
       </select>
       <div class="invalid-feedback">
         Please select a topic!
       </div>
     </div>
+    <div class="form-group row" id="subject-other">
+      <textarea class="form-control contact-us-input" name="subjectOther" rows="1" placeholder="please specify here..."></textarea>
+      <div class="invalid-feedback">
+        Please type your message in the box above.
+      </div>
+    </div>
     <div class="form-group row">
-      <label for="exampleFormControlSelect1">How did you hear about us?<sup>*</sup></label>
-      <select class="form-control" name="referral" id="referral" required>
+      <label>How did you hear about us?<sup>*</sup></label>
+      <select class="form-control" name="referral" id="referral" onchange='otherHandler(this.value, this);' required>
         <option selected disabled hidden value="">[select option]</option>
         <option>We have met in person!</option>
         <option>Search engine (Google, Yahoo, etc.)</option>
         <option>Recommended by friend/colleague</option>
         <option>Social Media (Instagram, Facebook, etc.)</option>
         <option>I have a Gal Gadot Fetish >:)</option>
-        <option>Other</option>
+        <option value="other">Other</option>
       </select>
       <div class="invalid-feedback">
         Please select an option!
       </div>
     </div>
+    <div class="form-group row" id="referral-other">
+      <textarea class="form-control contact-us-input" name="referralOther" rows="1" placeholder="please specify here..."></textarea>
+      <div class="invalid-feedback">
+        Please type your message in the box above.
+      </div>
+    </div>
     <div class="form-group row">
-      <label for="exampleFormControlTextarea1">Type your message below :)<sup>*</sup></label>
+      <label>Type your message below :)<sup>*</sup></label>
       <textarea class="form-control contact-us-input" name="message" id="message-box" rows="3" required></textarea>
       <div class="invalid-feedback">
         Please type your message in the box above.
@@ -81,6 +93,24 @@
       });
     }, false);
   })();
-</script>
 
+  function otherHandler(val, id) {
+    if (val === 'other') {
+      if (id === 'subject') {
+        $('#subject-other').css({ "display": "block"});
+      }
+      else {
+        $('#referral-other').css({ "display": "block"});
+      }
+    }
+    else {
+      if (id === 'subject') {
+        $('#subject-other').css({ "display": "none"});
+      }
+      else {
+        $('#referral-other').css({ "display": "none"});
+      }
+    }
+  }
+</script>
 <%- include("partials/footer") %>

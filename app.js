@@ -57,11 +57,11 @@ app.post("/contactform", function (req, res) {
 		let info = await transporter.sendMail({
 			from: '"PPP Website" <mayushtestemail@gmail.com>', // sender address
 			to: "itsnhilikeknee@gmail.com", // list of receivers
-			subject: req.body.subject, // Subject line
-			text: "name: " + req.body.name + "\nemail address: " + req.body.email + "\nreferral" + req.body.referral + "\nmessage:" + req.body.message, // plain text body
+			subject: req.body.subject + " " + req.body.subjectOther, // Subject line
+			text: "name: " + req.body.name + "\nemail address: " + req.body.email + "\nreferral" + req.body.referral + ": " + req.body.referralOther + "\nmessage:" + req.body.message, // plain text body
 			html: "<p style='font-size:14px;'><strong style='font-size:14px; color: grey;'>Name of Sender:</strong> " + req.body.name + 
 			"<br><strong style='font-size:14px; color: grey;'>Sender's Email Address:</strong> " + req.body.email + 
-			"<br><strong style='font-size:14px; color: grey;'>How Sender Heard About Us:</strong> " + req.body.referral + 
+			"<br><strong style='font-size:14px; color: grey;'>How Sender Heard About Us:</strong> " + req.body.referral + " " + req.body.referralOther +
 			"<br><strong style='font-size:14px; color: grey;'>Message:</strong> <br>" + req.body.message + "</p>", // html body
 		});
 		console.log("Message sent: %s", info.messageId);
