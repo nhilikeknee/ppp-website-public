@@ -1,5 +1,4 @@
 # ppp-website
-## DID IT WORK??
 Note 1: every time one of us installs a new npm package, the other one needs to run `npm update` after pulling  
 Note 2: VS Code has a built-in terminal & built-in git (can stage/commit/push directly from VSC)
 
