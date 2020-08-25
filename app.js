@@ -1,7 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
-const ip = process.env.IP || "localhost";
 const port = process.env.PORT || 3000;
 const app = express();
 
@@ -70,7 +69,7 @@ app.post("/contactform", function (req, res) {
 	res.redirect("/messagesent");
 });
 
-app.listen(port, ip, function () {
+app.listen(port, function () {
 	console.log("HEY LOOK, THE SERVER IS WORKING!");
 });
 
