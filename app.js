@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
-var enforce = require('express-sslify');
+const enforce = require('express-sslify');
 const port = process.env.PORT || 3000;
 const app = express();
 
