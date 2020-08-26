@@ -51,7 +51,7 @@ app.post("/contactform", function (req, res) {
 			secure: false,
 			auth: {
 				user: 'mayushtestemail@gmail.com',
-				pass: 'mayush68359!'
+				pass: process.env.EMAIL_PWD
 			}
 		});
 
