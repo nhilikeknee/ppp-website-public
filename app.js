@@ -1,12 +1,14 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
+var enforce = require('express-sslify');
 const port = process.env.PORT || 3000;
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
+app.use(enforce.HTTPS({ trustProtoHeader: true }));
 
 app.get("/", function (req, res) {
 	res.render("index", { title: "index" });
